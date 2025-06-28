@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="style/header.css" rel="stylesheet">
+    <link href="style/content.css" rel="stylesheet">
+    <link href="style/page_two.css" rel="stylesheet">
+
+    <script src="script/scripts.js" defer></script>
+
+
+    <style>
+        @font-face {
+            src: url("../web_bookapo/fonts/Kokab.ttf");
+            font-family: ram;
+        }
+
+        #loading {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="loading"
+        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+        <img src="img/icons8-open-book.gif" alt="Loading">
+    </div>
+
+
+
+    <div id="page_one">
+        <div id="header">
+            <div class="top">
+                <div class="logo"><img src="D:/pilot/bookapo_project/02.jpg">
+                    <p>دریچه‌ای به خلاصه کتاب های روز دنیا</p>
+                </div>
+                <div class="search">
+                    <input type="text" id="search-box" placeholder=" جستجو در نام کتاب و نویسنده و موضوع و ...">
+                </div>
+                <button class="login">
+                    <p>ورود / ثبت نام</p>
+                </button>
+            </div>
+            <div class="bottom">
+                <div class="download">دانلود اپلیکیشن موبایل<img src="D:/pilot/bookapo_project/08.png"></div>
+                <div class="items1"><img src="D:/pilot/bookapo_project/07.png">خرید اشتراک<img
+                        src="D:/pilot/bookapo_project/06.png"></div>
+                <div class="items">مجله<img src="D:/pilot/bookapo_project/05.png"></div>
+                <div class="items2"><img src="D:/pilot/bookapo_project/09.png">دسته بندی ها<img
+                        src="D:/pilot/bookapo_project/04.png">
+                    <!-- <div class="submenu"> </div> -->
+                </div>
+                <div class="items">خانه<img src="D:/pilot/bookapo_project/03.png"></div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="top">
+                <div class="right">
+                    <div class="category">
+                        <div class="up_category">
+                            <p>دسته بندی ها</p>
+                        </div>
+                        <div class="down_category">
+                            <input type="text" id="search-box-category" placeholder="همه دسته بندی ها">
+                            <div class="img_of_box_category">
+                                <img src="images/09.png" alt="Arrow" class="arrow-icon-category">
+                            </div>
+                            <ul class="dropdown-list-category">
+                                <li><input type="checkbox" value="all">
+                                    <p> همه دسته بندی ها</p>
+                                </li>
+                                <li><input type="checkbox" value="توسعه مهارت های فردی">
+                                    <p>توسعه مهارت های فردی</p>
+                                </li>
+                                <li><input type="checkbox" value="روانشناسی">
+                                    <p> روانشناسی</p>
+                                </li>
+                                <li><input type="checkbox" value="مهارت های اجتماعی">
+                                    <p>مهارت های اجتماعی</p>
+                                </li>
+                                <li><input type="checkbox" value="روابط عاطفی و خانواده">
+                                    <p>روابط عاطفی و خانواده</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="up_project">
+                            <p>موضوعات</p>
+                        </div>
+                        <div class="down_project">
+                            <input type="text" id="search-box-category" placeholder="همه موضوعات">
+                            <div class="img_of_box">
+                                <img src="images/09.png" alt="Arrow" class="arrow-icon">
+                            </div>
+                            <ul class="dropdown-list">
+                                <li><input type="checkbox" value="all">
+                                    <p> همه موضوعات</p>
+                                </li>
+                                <li><input type="checkbox" value="کسب و کار">
+                                    <p> کسب و کار</p>
+                                </li>
+                                <li><input type="checkbox" value="رهبری">
+                                    <p> رهبری</p>
+                                </li>
+                                <li><input type="checkbox" value="رشد فردی">
+                                    <p> رشد فردی</p>
+                                </li>
+                                <li><input type="checkbox" value="مدیریت">
+                                    <p> مدیریت</p>
+                                </li>
+
+                                <li><input type="checkbox" value="روانشناسی">
+                                    <p>روانشناسی</p>
+                                </li>
+                                <li><input type="checkbox" value="اعتماد بنفس">
+                                    <p>اعتماد بنفس</p>
+                                </li>
+                                <li><input type="checkbox" value="بهره وری">
+                                    <p> بهره وری</p>
+                                </li>
+                                <li><input type="checkbox" value="انگیزشی">
+                                    <p> انگیزشی</p>
+                                </li>
+
+                                <li><input type="checkbox" value="کار آفرینی">
+                                    <p>کار آفرینی</p>
+                                </li>
+                                <li><input type="checkbox" value="بازاریابی">
+                                    <p> بازاریابی</p>
+                                </li>
+                                <li><input type="checkbox" value="اقتصاد">
+                                    <p>اقتصاد</p>
+                                </li>
+                                <li><input type="checkbox" value="زمان">
+                                    <p> زمان</p>
+                                </li>
+
+                                <li><input type="checkbox" value="سرمایه">
+                                    <p>سرمایه</p>
+                                </li>
+                                <li><input type="checkbox" value="خلاقیت">
+                                    <p>خلاقیت</p>
+                                </li>
+                                <li><input type="checkbox" value="تکنولوژی">
+                                    <p>تکنولوژی</p>
+                                </li>
+                                <li><input type="checkbox" value="فرهنگ">
+                                    <p> فرهنگ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="box_filter">
+                        <img src="images/trash.png">
+                        <p>حذف فیلتر</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="up">
+                    <div class="items">
+                        <div class="item" id="filter_all_books">
+                            <p>همه کتاب ها </p>
+                        </div>
+                        <div class="item" id="filter_high_rated">
+                            <p>بالاترین امتیاز</p>
+                        </div>
+
+                        <div class="item" id="filter_popular">
+                            <p>پرطرفدار ترین</p>
+                        </div>
+                        <div class="item" id="filter_short">
+                            <p>کوتاه ترین</p>
+                        </div>
+                        <div class="item" id="filter_long">
+                            <p>بلند ترین</p>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <img src="img/icons8-shopping-cart-40.png">
+                        <span class="quantity">0</span>
+                    </div>
+                    <div class="shopping">
+                        <h1>سبد خرید</h1>
+                        <ul class="list_book">
+                            <li>
+                                <img src="img/book.jpg" alt="Book">
+                                <div class="book-title">نام کتاب</div>
+                                <div class="book-quantity">تعداد: 2</div>
+                                <div class="removeFromCart"></div>
+                            </li>
+                        </ul>
+                        <div class="close">
+                            <p>بستن</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="down">
+                    <div class="down_text">
+                        <p>خلاصه کتاب‌های انتخابی شما</p>
+                    </div>
+                    <div class="books" id="bookContainer"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+
+
+    <div id="page_two" style="display: none;">
+
+        <div id="header">
+            <div class="top">
+                <div class="logo"><img src="D:/pilot/bookapo_project/02.jpg">
+                    <p>دریچه‌ای به خلاصه کتاب های روز دنیا</p>
+                </div>
+                <div class="search">
+                    <input type="text" id="search-box" placeholder=" جستجو در نام کتاب و نویسنده و موضوع و ...">
+                </div>
+                <button class="login">
+                    <p>ورود / ثبت نام</p>
+                </button>
+            </div>
+            <div class="bottom">
+                <div class="download">دانلود اپلیکیشن موبایل<img src="D:/pilot/bookapo_project/08.png"></div>
+                <div class="items1"><img src="D:/pilot/bookapo_project/07.png">خرید اشتراک<img
+                        src="D:/pilot/bookapo_project/06.png"></div>
+                <div class="items">مجله<img src="D:/pilot/bookapo_project/05.png"></div>
+                <div class="items2"><img src="D:/pilot/bookapo_project/09.png">دسته بندی ها<img
+                        src="D:/pilot/bookapo_project/04.png">
+                    <!-- <div class="submenu"> </div> -->
+                </div>
+                <div class="items">خانه<img src="D:/pilot/bookapo_project/03.png"></div>
+            </div>
+        </div>
+
+        <div id="back">
+            <p>بازگشت به صفحه قبل</p>
+        </div>
+
+        <div id="about_book">
+            <div class="text_about_book">
+                <h4>خلاصه کتاب</h4>
+                <h1>چراغ ها را من خاموش می کنم</h1>
+                <h3>کتابی محشر در مورد ... </h3>
+                <div class="box">
+                    <div class="box_of_text">
+                        <img src="img/icons8-open-book-20.png">
+                        <p>خلاصه متنی</p>
+                    </div>
+                    <div class="box_of_voice">
+                        <img src="img/icons8-headphones-20.png">
+                        <p>خلاصه صوتی</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img_of_one_book">
+                <img src="img/25.jpg">
+            </div>
+        </div>
+
+        <div id="items">
+            <div class="item">
+                <img src="img/clock-48.png">
+                <p>دقیقه</p>
+            </div>
+            <div class="item">
+                <img src="img/star-filled-64 (1).png">
+                <p>امتیاز</p>
+            </div>
+            <div class="item">
+                <img src="img/icons8-headphones-48.png">
+                <p>خلاصه صوتی و متنی</p>
+            </div>
+            <div class="item">
+                <img src="img/diversity-48.png">
+                <p>تکنولوژی و جهان آینده</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
